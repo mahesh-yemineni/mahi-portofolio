@@ -35,7 +35,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="text-2xl font-bold font-display text-gradient-hero cursor-pointer hover:scale-105 transition-transform duration-300"
                onClick={() => scrollToSection('hero')}>
-            Mahesh
+            Mahesh Yemineni
           </div>
           
           {/* Desktop Navigation */}

@@ -6,17 +6,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com",
+      href: "https://github.com/mahesh-yemineni",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/mahesh-yemineni-629627233/",
       label: "LinkedIn"
     },
     {
       icon: Mail,
-      href: "mailto:mahesh@example.com",
+      href: "mailto:yeminenimahi@gmail.com",
       label: "Email"
     }
   ];
@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Brand */}
             <div>
-              <h3 className="text-2xl font-bold mb-4">Mahesh</h3>
+              <h3 className="text-2xl font-bold mb-4">Mahesh Yemineni</h3>
               <p className="text-white/80 leading-relaxed">
                 Passionate about building impactful solutions in Data Analytics, 
                 Salesforce, and Software Development.
@@ -74,8 +74,8 @@ const Footer = () => {
                 ))}
               </div>
               <p className="text-white/80 text-sm">
-                mahesh@example.com<br />
-                +91 98765 43210
+                yeminenimahi@gmail.com<br />
+                +91 7989023566
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Footer = () => {
               <div className="flex items-center text-white/80 mb-4 md:mb-0">
                 <span>Made with</span>
                 <Heart className="h-4 w-4 mx-2 text-red-400" />
-                <span>by Mahesh © {currentYear}</span>
+                <span>by Mahesh Yemineni © {currentYear}</span>
               </div>
               
               <button

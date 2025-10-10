@@ -44,10 +44,10 @@ const Hero = () => {
                     Available for opportunities ✨
                   </span>
                 </div>
-                <h1 className="text-5xl md:text-7xl lg:text-6xl xl:text-7xl font-bold font-display mb-8 leading-tight">
-                  Hi, I'm{" "}
+                <h1 className="font-bold font-display mb-8 leading-tight">
+                  <span className="text-2xl md:text-3xl text-white/90 block mb-2">Hi, I'm</span>
                   <span className="relative inline-block">
-                    <span className="text-white drop-shadow-2xl">Mahesh Yemineni</span>
+                    <span className="text-5xl md:text-7xl lg:text-6xl xl:text-7xl text-white drop-shadow-2xl">Mahesh Yemineni</span>
                     <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-transparent rounded-lg blur-lg opacity-50"></div>
                   </span>
                 </h1>
@@ -100,24 +100,28 @@ const Hero = () => {
           </div>
           
           {/* Enhanced Social Links */}
-          <div className="slide-up flex justify-center lg:justify-start space-x-8 mb-16">
-            {[
-              { icon: Github, href: "https://github.com/mahesh-yemineni", label: "GitHub" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/mahesh-yemineni-629627233/", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:yeminenimahi@gmail.com", label: "Email" }
-            ].map((social, index) => (
-              <a 
-                key={social.label}
-                href={social.href} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group p-4 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 backdrop-blur-sm border border-white/20 scale-in"
-                style={{ animationDelay: `${index * 200}ms` }}
-                aria-label={social.label}
-              >
-                <social.icon className="h-6 w-6 text-white group-hover:text-white transition-colors duration-200" />
-              </a>
-            ))}
+          <div className="slide-up flex flex-col space-y-4 justify-center lg:justify-start items-center lg:items-start mb-16">
+            <div className="flex space-x-8">
+              {[
+                { icon: Github, href: "https://github.com/mahesh-yemineni", label: "GitHub", emoji: "💻" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/mahesh-yemineni-629627233/", label: "LinkedIn", emoji: "💼" },
+                { icon: Mail, href: "mailto:yeminenimahi@gmail.com", label: "Email", emoji: "📧" }
+              ].map((social, index) => (
+                <div key={social.label} className="flex flex-col items-center space-y-2 scale-in" style={{ animationDelay: `${index * 200}ms` }}>
+                  <a 
+                    href={social.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="group p-4 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 backdrop-blur-sm border border-white/20"
+                    aria-label={social.label}
+                  >
+                    <social.icon className="h-6 w-6 text-white group-hover:text-white transition-colors duration-200" />
+                  </a>
+                  <span className="text-lg">{social.emoji}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-white/80 text-sm">📞 +91 7989023566</p>
           </div>
         </div>
       </div>
