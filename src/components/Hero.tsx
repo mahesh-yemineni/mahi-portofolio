@@ -54,13 +54,15 @@ const Hero = () => {
                 <p className="text-xl md:text-2xl mb-4 text-white/95 leading-relaxed font-medium">
                   Passionate about building impactful solutions in
                 </p>
-                <div className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold mb-12 space-y-2">
+                <div className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold mb-12 space-y-3">
                   <div className="text-white/90">
-                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Data Analytics</span>
-                    <span className="mx-3 text-white/60">•</span>
-                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Salesforce</span>
-                    <span className="mx-3 text-white/60">•</span>
-                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Software Development</span>
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">📊 Data Analytics</span>
+                  </div>
+                  <div className="text-white/90">
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">☁️ Salesforce</span>
+                  </div>
+                  <div className="text-white/90">
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">💻 Software Development</span>
                   </div>
                 </div>
               </div>
@@ -103,22 +105,21 @@ const Hero = () => {
           <div className="slide-up flex flex-col space-y-4 justify-center lg:justify-start items-center lg:items-start mb-16">
             <div className="flex space-x-8">
               {[
-                { icon: Github, href: "https://github.com/mahesh-yemineni", label: "GitHub", emoji: "💻" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/mahesh-yemineni-629627233/", label: "LinkedIn", emoji: "💼" },
-                { icon: Mail, href: "mailto:yeminenimahi@gmail.com", label: "Email", emoji: "📧" }
+                { icon: Github, href: "https://github.com/mahesh-yemineni", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/mahesh-yemineni-629627233/", label: "LinkedIn" },
+                { icon: Mail, href: "mailto:yeminenimahi@gmail.com", label: "Email" }
               ].map((social, index) => (
-                <div key={social.label} className="flex flex-col items-center space-y-2 scale-in" style={{ animationDelay: `${index * 200}ms` }}>
-                  <a 
-                    href={social.href} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="group p-4 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 backdrop-blur-sm border border-white/20"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="h-6 w-6 text-white group-hover:text-white transition-colors duration-200" />
-                  </a>
-                  <span className="text-lg">{social.emoji}</span>
-                </div>
+                <a 
+                  key={social.label}
+                  href={social.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group p-4 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 backdrop-blur-sm border border-white/20 scale-in"
+                  style={{ animationDelay: `${index * 200}ms` }}
+                  aria-label={social.label}
+                >
+                  <social.icon className="h-6 w-6 text-white group-hover:text-white transition-colors duration-200" />
+                </a>
               ))}
             </div>
             <p className="text-white/80 text-sm">📞 +91 7989023566</p>
