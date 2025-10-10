@@ -47,7 +47,7 @@ const Hero = () => {
                 <h1 className="font-bold font-display mb-8 leading-tight">
                   <span className="text-2xl md:text-3xl text-white/90 block mb-2">Hi, I'm</span>
                   <span className="relative inline-block">
-                    <span className="text-5xl md:text-7xl lg:text-6xl xl:text-7xl text-white drop-shadow-2xl">Mahesh Yemineni</span>
+                    <span className="text-4xl md:text-6xl lg:text-5xl xl:text-6xl text-white drop-shadow-2xl">Mahesh Yemineni</span>
                     <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-transparent rounded-lg blur-lg opacity-50"></div>
                   </span>
                 </h1>
@@ -56,13 +56,16 @@ const Hero = () => {
                 </p>
                 <div className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold mb-12 space-y-3">
                   <div className="text-white/90">
-                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">📊 Data Analytics</span>
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Data Analytics </span>
+                    <span className="text-2xl">📊</span>
                   </div>
                   <div className="text-white/90">
-                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">☁️ Salesforce</span>
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Salesforce </span>
+                    <span className="text-2xl">☁️</span>
                   </div>
                   <div className="text-white/90">
-                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">💻 Software Development</span>
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Software Development </span>
+                    <span className="text-2xl">💻</span>
                   </div>
                 </div>
               </div>
