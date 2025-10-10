@@ -48,14 +48,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "mahesh@example.com",
-      href: "mailto:mahesh@example.com"
+      value: "yeminenimahi@gmail.com",
+      href: "mailto:yeminenimahi@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210"
+      value: "+91 7989023566",
+      href: "tel:+917989023566"
     },
     {
       icon: MapPin,
@@ -69,13 +69,13 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/mahesh-yemineni-629627233/",
       color: "hover:text-blue-600"
     },
     {
       icon: Github,
       label: "GitHub", 
-      href: "https://github.com",
+      href: "https://github.com/mahesh-yemineni",
       color: "hover:text-gray-900"
     }
   ];

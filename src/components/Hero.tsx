@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -46,7 +47,7 @@ const Hero = () => {
                 <h1 className="text-5xl md:text-7xl lg:text-6xl xl:text-7xl font-bold font-display mb-8 leading-tight">
                   Hi, I'm{" "}
                   <span className="relative inline-block">
-                    <span className="text-white drop-shadow-2xl">Mahesh</span>
+                    <span className="text-white drop-shadow-2xl">Mahesh Yemineni</span>
                     <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-transparent rounded-lg blur-lg opacity-50"></div>
                   </span>
                 </h1>
@@ -68,8 +69,12 @@ const Hero = () => {
             {/* Professional Photo */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative scale-in">
-                <div className="hero-photo bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center text-white/40 text-6xl font-light backdrop-blur-sm">
-                  M
+                <div className="hero-photo overflow-hidden">
+                  <img 
+                    src={profilePhoto} 
+                    alt="Mahesh Yemineni - Professional Headshot" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -inset-4 bg-gradient-to-r from-white/10 to-transparent rounded-full blur-2xl opacity-30"></div>
               </div>
@@ -97,9 +102,9 @@ const Hero = () => {
           {/* Enhanced Social Links */}
           <div className="slide-up flex justify-center lg:justify-start space-x-8 mb-16">
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:mahesh@example.com", label: "Email" }
+              { icon: Github, href: "https://github.com/mahesh-yemineni", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/mahesh-yemineni-629627233/", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:yeminenimahi@gmail.com", label: "Email" }
             ].map((social, index) => (
               <a 
                 key={social.label}
