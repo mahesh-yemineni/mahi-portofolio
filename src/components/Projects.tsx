@@ -16,11 +16,11 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const projects: Project[] = [
-    // Data Analytics Projects
+    // Data Analyst Projects
     {
       id: 1,
-      title: "Retail Sales Dashboard – Track Revenue & Inventory Trends",
-      description: "Analyzed sales and inventory data to uncover customer buying patterns, improving reporting efficiency by XX%. Built interactive dashboards for stakeholders.",
+      title: "Retail Sales Dashboard",
+      description: "Developed an interactive dashboard analyzing sales and inventory trends, uncovering customer buying patterns, and improving reporting efficiency by 25%.",
       category: "Data Analytics",
       technologies: ["Python", "SQL", "Power BI"],
       githubLink: "Coming Soon",
@@ -28,129 +28,129 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Customer Segmentation Analysis – RFM & Clustering",
-      description: "Segmented customers using RFM analysis and K-means clustering to identify high-value segments. Enabled targeted marketing campaigns.",
+      title: "Marketing Campaign Effectiveness Analysis",
+      description: "Conducted analysis of marketing campaigns, measuring ROI and conversion rates, optimizing strategies, and improving campaign efficiency by 12%.",
       category: "Data Analytics",
-      technologies: ["Python", "Tableau", "SQL"],
+      technologies: ["Python", "SQL", "Power BI"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
       id: 3,
-      title: "Financial KPI Dashboard – Budget vs Actuals Tracking",
-      description: "Designed executive dashboard to track financial KPIs, budget variance, and forecast accuracy. Improved decision-making speed.",
+      title: "Customer Segmentation Analysis",
+      description: "Executed customer segmentation using clustering algorithms, enabling targeted marketing campaigns and boosting engagement by 15%.",
       category: "Data Analytics",
-      technologies: ["Power BI", "MySQL", "Excel"],
+      technologies: ["Python", "Azure"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
       id: 4,
-      title: "Predictive Sales Forecasting – Time Series Analysis",
-      description: "Built predictive models using ARIMA and Prophet to forecast monthly sales. Reduced inventory costs through better demand planning.",
+      title: "Investment Risk Simulation",
+      description: "Built a Monte Carlo simulation to forecast portfolio risk and optimize investment strategies, increasing forecast accuracy by 20%.",
       category: "Data Analytics",
-      technologies: ["Python", "Pandas", "Tableau"],
+      technologies: ["Python", "Monte Carlo Simulation"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
       id: 5,
-      title: "Healthcare Analytics Dashboard – Patient Outcomes Tracking",
-      description: "Created interactive dashboard to monitor patient outcomes, treatment effectiveness, and resource utilization for healthcare providers.",
+      title: "Data Quality & Compliance Dashboard",
+      description: "Created dashboards to monitor data quality and compliance KPIs, reducing reporting errors by 30% and improving regulatory adherence.",
       category: "Data Analytics",
-      technologies: ["SQL", "Power BI", "GCP"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
-    },
-    // Salesforce Projects
-    {
-      id: 6,
-      title: "Lead Management Automation – Workflow & Process Builder",
-      description: "Automated lead assignment, scoring, and follow-up workflows using Process Builder and Flows. Improved sales team efficiency by XX%.",
-      category: "Salesforce",
-      technologies: ["Salesforce", "Process Builder", "Flows"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
-    },
-    {
-      id: 7,
-      title: "Custom Lightning Component – Case Management Tool",
-      description: "Developed Lightning Web Component for streamlined case management. Enhanced user experience and reduced case resolution time.",
-      category: "Salesforce",
-      technologies: ["Salesforce", "LWC", "Apex"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
-    },
-    {
-      id: 8,
-      title: "Service Cloud Implementation – Customer Support Portal",
-      description: "Implemented Service Cloud with self-service portal, knowledge base, and case escalation rules. Improved customer satisfaction scores.",
-      category: "Salesforce",
-      technologies: ["Salesforce", "Service Cloud", "Lightning"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
-    },
-    {
-      id: 9,
-      title: "Third-Party API Integration – Payment Gateway",
-      description: "Integrated external payment gateway with Salesforce using REST API and Apex. Automated invoicing and payment tracking.",
-      category: "Salesforce",
-      technologies: ["Salesforce", "API Integration", "Apex"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
-    },
-    {
-      id: 10,
-      title: "Sales Analytics Dashboard – Pipeline & Performance Metrics",
-      description: "Built comprehensive sales dashboard tracking pipeline health, conversion rates, and team performance. Enabled data-driven sales decisions.",
-      category: "Salesforce",
-      technologies: ["Salesforce", "Reports", "Dashboards"],
+      technologies: ["Tableau"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     // Software Development Projects
     {
-      id: 11,
-      title: "Task Management Web App – Django Full Stack",
-      description: "Built full-stack task management application with user authentication, task CRUD operations, and team collaboration features.",
+      id: 6,
+      title: "E-commerce Web Application",
+      description: "Developed a full-stack e-commerce platform with product management, shopping cart, and order tracking functionality.",
       category: "Software Development",
-      technologies: ["Python", "Django", "PostgreSQL"],
+      technologies: ["Django", "React", "MySQL"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
+    },
+    {
+      id: 7,
+      title: "Task Management System",
+      description: "Built a web application for task creation, assignment, and tracking, improving team productivity and accountability.",
+      category: "Software Development",
+      technologies: ["Flask", "Python", "SQLite"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
+    },
+    {
+      id: 8,
+      title: "Portfolio Website with Dynamic Content",
+      description: "Created a fully responsive, dynamic portfolio website showcasing projects, skills, and contact form integration.",
+      category: "Software Development",
+      technologies: ["React", "Tailwind"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
+    },
+    {
+      id: 9,
+      title: "Blogging Platform",
+      description: "Developed a blogging platform with content management, comments, and user authentication for multiple authors.",
+      category: "Software Development",
+      technologies: ["Django", "PostgreSQL"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
+    },
+    {
+      id: 10,
+      title: "Real-Time Chat App",
+      description: "Built a chat application supporting real-time messaging, online status, and group chat features.",
+      category: "Software Development",
+      technologies: ["Node.js", "Socket.io", "MongoDB"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
+    },
+    // Salesforce Projects
+    {
+      id: 11,
+      title: "Salesforce CRM Automation",
+      description: "Automated lead assignment, follow-ups, and workflow processes to increase sales team efficiency.",
+      category: "Salesforce",
+      technologies: ["Apex", "LWC", "Workflows"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
       id: 12,
-      title: "E-Commerce Platform – MERN Stack",
-      description: "Developed e-commerce platform with product catalog, shopping cart, payment integration, and order management system.",
-      category: "Software Development",
-      technologies: ["React", "Node.js", "MongoDB"],
+      title: "Employee Performance Tracker",
+      description: "Developed dashboards to track employee KPIs, identify skill gaps, and improve workforce planning.",
+      category: "Salesforce",
+      technologies: ["Salesforce Reports", "Dashboards"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
       id: 13,
-      title: "Blog CMS – Flask & MySQL",
-      description: "Created content management system for blogging with rich text editor, category management, and user role-based access control.",
-      category: "Software Development",
-      technologies: ["Python", "Flask", "MySQL"],
+      title: "Lead Management System",
+      description: "Implemented a lead tracking system to monitor lead stages, conversions, and pipeline metrics.",
+      category: "Salesforce",
+      technologies: ["Salesforce Flows", "Apex"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
       id: 14,
-      title: "Inventory Management System – Spring Boot",
-      description: "Built enterprise inventory management system with real-time stock tracking, supplier management, and automated reorder alerts.",
-      category: "Software Development",
-      technologies: ["Java", "Spring Boot", "PostgreSQL"],
+      title: "Custom Salesforce Dashboard – KPI Monitoring",
+      description: "Created custom dashboards for real-time KPI tracking, enabling data-driven decisions by management.",
+      category: "Salesforce",
+      technologies: ["KPI Monitoring"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
       id: 15,
-      title: "RESTful API Service – Microservices Architecture",
-      description: "Designed and deployed scalable RESTful API service using microservices architecture, containerized with Docker.",
-      category: "Software Development",
-      technologies: ["Python", "REST API", "Docker"],
+      title: "Customer Feedback System",
+      description: "Built an automated feedback collection and analysis system to improve customer experience.",
+      category: "Salesforce",
+      technologies: ["Salesforce Automation"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     }

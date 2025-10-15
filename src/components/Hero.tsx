@@ -98,9 +98,17 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="btn-cta-secondary text-lg px-8 py-4 font-semibold min-w-[180px]"
+              asChild
             >
-              <Download className="mr-3 h-5 w-5" />
-              Download Resume
+              <a 
+                href="https://docs.google.com/document/d/1w_mNO0dzJ8udfvHxbeEOMomMVoieIiNn/export?format=pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="mr-3 h-5 w-5" />
+                Download Resume
+              </a>
             </Button>
           </div>
           

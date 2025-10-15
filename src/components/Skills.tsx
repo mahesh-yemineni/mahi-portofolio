@@ -24,7 +24,7 @@ const Skills = () => {
         { name: "Tableau", level: 85 },
         { name: "Matplotlib", level: 80 },
         { name: "Seaborn", level: 78 },
-        { name: "Plotly", level: 75 }
+        { name: "Streamlit", level: 75 }
       ]
     },
     {
@@ -33,9 +33,7 @@ const Skills = () => {
       description: "Cloud and database management",
       skills: [
         { name: "MySQL/PostgreSQL", level: 85 },
-        { name: "Google Cloud Platform", level: 80 },
-        { name: "BigQuery", level: 75 },
-        { name: "Data Storage", level: 78 }
+        { name: "Google Cloud Platform", level: 80 }
       ]
     },
     {
@@ -45,9 +43,8 @@ const Skills = () => {
       skills: [
         { name: "Data Cleaning", level: 88 },
         { name: "Statistical Analysis", level: 82 },
-        { name: "Predictive Modeling", level: 80 },
-        { name: "KPI Monitoring", level: 85 },
-        { name: "Clustering", level: 78 }
+        { name: "Data Structures", level: 80 },
+        { name: "Data Storytelling", level: 88 }
       ]
     },
     {
@@ -78,9 +75,6 @@ const Skills = () => {
       description: "Methodology and soft skills",
       skills: [
         { name: "Agile Methodology", level: 85 },
-        { name: "Problem Solving", level: 90 },
-        { name: "Data Storytelling", level: 88 },
-        { name: "Critical Thinking", level: 85 },
         { name: "Design Thinking", level: 78 }
       ]
     }

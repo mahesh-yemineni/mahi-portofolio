@@ -170,9 +170,17 @@ const Contact = () => {
                   <Button 
                     className="w-full"
                     size="lg"
+                    asChild
                   >
-                    <Download className="mr-2 h-5 w-5" />
-                    Download Resume (PDF)
+                    <a 
+                      href="https://docs.google.com/document/d/1w_mNO0dzJ8udfvHxbeEOMomMVoieIiNn/export?format=pdf"
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Download className="mr-2 h-5 w-5" />
+                      Download Resume (PDF)
+                    </a>
                   </Button>
                 </div>
               </div>
