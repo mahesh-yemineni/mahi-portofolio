@@ -16,29 +16,29 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const projects: Project[] = [
-    // Project placeholders - titles and descriptions to be updated
+    // Data Analytics Projects
     {
       id: 1,
-      title: "Project Title 1",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Retail Sales Dashboard – Track Revenue & Inventory Trends",
+      description: "Analyzed sales and inventory data to uncover customer buying patterns, improving reporting efficiency by XX%. Built interactive dashboards for stakeholders.",
       category: "Data Analytics",
-      technologies: ["Python", "SQL", "Power BI", "Excel"],
+      technologies: ["Python", "SQL", "Power BI"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
       id: 2,
-      title: "Project Title 2",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Customer Segmentation Analysis – RFM & Clustering",
+      description: "Segmented customers using RFM analysis and K-means clustering to identify high-value segments. Enabled targeted marketing campaigns.",
       category: "Data Analytics",
-      technologies: ["Tableau", "SQL", "Python"],
+      technologies: ["Python", "Tableau", "SQL"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
       id: 3,
-      title: "Project Title 3",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Financial KPI Dashboard – Budget vs Actuals Tracking",
+      description: "Designed executive dashboard to track financial KPIs, budget variance, and forecast accuracy. Improved decision-making speed.",
       category: "Data Analytics",
       technologies: ["Power BI", "MySQL", "Excel"],
       githubLink: "Coming Soon",
@@ -46,8 +46,8 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Project Title 4",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Predictive Sales Forecasting – Time Series Analysis",
+      description: "Built predictive models using ARIMA and Prophet to forecast monthly sales. Reduced inventory costs through better demand planning.",
       category: "Data Analytics",
       technologies: ["Python", "Pandas", "Tableau"],
       githubLink: "Coming Soon",
@@ -55,35 +55,36 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Project Title 5",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Healthcare Analytics Dashboard – Patient Outcomes Tracking",
+      description: "Created interactive dashboard to monitor patient outcomes, treatment effectiveness, and resource utilization for healthcare providers.",
       category: "Data Analytics",
       technologies: ["SQL", "Power BI", "GCP"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
+    // Salesforce Projects
     {
       id: 6,
-      title: "Project Title 6",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
-      category: "Salesforce",
-      technologies: ["Salesforce", "Apex", "Lightning"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
-    },
-    {
-      id: 7,
-      title: "Project Title 7",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Lead Management Automation – Workflow & Process Builder",
+      description: "Automated lead assignment, scoring, and follow-up workflows using Process Builder and Flows. Improved sales team efficiency by XX%.",
       category: "Salesforce",
       technologies: ["Salesforce", "Process Builder", "Flows"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
     {
+      id: 7,
+      title: "Custom Lightning Component – Case Management Tool",
+      description: "Developed Lightning Web Component for streamlined case management. Enhanced user experience and reduced case resolution time.",
+      category: "Salesforce",
+      technologies: ["Salesforce", "LWC", "Apex"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
+    },
+    {
       id: 8,
-      title: "Project Title 8",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Service Cloud Implementation – Customer Support Portal",
+      description: "Implemented Service Cloud with self-service portal, knowledge base, and case escalation rules. Improved customer satisfaction scores.",
       category: "Salesforce",
       technologies: ["Salesforce", "Service Cloud", "Lightning"],
       githubLink: "Coming Soon",
@@ -91,8 +92,8 @@ const Projects = () => {
     },
     {
       id: 9,
-      title: "Project Title 9",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Third-Party API Integration – Payment Gateway",
+      description: "Integrated external payment gateway with Salesforce using REST API and Apex. Automated invoicing and payment tracking.",
       category: "Salesforce",
       technologies: ["Salesforce", "API Integration", "Apex"],
       githubLink: "Coming Soon",
@@ -100,17 +101,18 @@ const Projects = () => {
     },
     {
       id: 10,
-      title: "Project Title 10",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Sales Analytics Dashboard – Pipeline & Performance Metrics",
+      description: "Built comprehensive sales dashboard tracking pipeline health, conversion rates, and team performance. Enabled data-driven sales decisions.",
       category: "Salesforce",
       technologies: ["Salesforce", "Reports", "Dashboards"],
       githubLink: "Coming Soon",
       liveLink: "Coming Soon"
     },
+    // Software Development Projects
     {
       id: 11,
-      title: "Project Title 11",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Task Management Web App – Django Full Stack",
+      description: "Built full-stack task management application with user authentication, task CRUD operations, and team collaboration features.",
       category: "Software Development",
       technologies: ["Python", "Django", "PostgreSQL"],
       githubLink: "Coming Soon",
@@ -118,8 +120,8 @@ const Projects = () => {
     },
     {
       id: 12,
-      title: "Project Title 12",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "E-Commerce Platform – MERN Stack",
+      description: "Developed e-commerce platform with product catalog, shopping cart, payment integration, and order management system.",
       category: "Software Development",
       technologies: ["React", "Node.js", "MongoDB"],
       githubLink: "Coming Soon",
@@ -127,8 +129,8 @@ const Projects = () => {
     },
     {
       id: 13,
-      title: "Project Title 13",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Blog CMS – Flask & MySQL",
+      description: "Created content management system for blogging with rich text editor, category management, and user role-based access control.",
       category: "Software Development",
       technologies: ["Python", "Flask", "MySQL"],
       githubLink: "Coming Soon",
@@ -136,8 +138,8 @@ const Projects = () => {
     },
     {
       id: 14,
-      title: "Project Title 14",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "Inventory Management System – Spring Boot",
+      description: "Built enterprise inventory management system with real-time stock tracking, supplier management, and automated reorder alerts.",
       category: "Software Development",
       technologies: ["Java", "Spring Boot", "PostgreSQL"],
       githubLink: "Coming Soon",
@@ -145,8 +147,8 @@ const Projects = () => {
     },
     {
       id: 15,
-      title: "Project Title 15",
-      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      title: "RESTful API Service – Microservices Architecture",
+      description: "Designed and deployed scalable RESTful API service using microservices architecture, containerized with Docker.",
       category: "Software Development",
       technologies: ["Python", "REST API", "Docker"],
       githubLink: "Coming Soon",

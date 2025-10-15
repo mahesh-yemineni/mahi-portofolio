@@ -10,39 +10,78 @@ const Skills = () => {
       skills: [
         { name: "Python", level: 90, isPremium: true },
         { name: "SQL", level: 92, isPremium: true },
-        { name: "MySQL", level: 85 }
+        { name: "Java", level: 80 },
+        { name: "React", level: 78 },
+        { name: "Excel", level: 88 }
       ]
     },
     {
-      title: "Data Visualization",
+      title: "Data Visualization & BI Tools",
       icon: "📊",
       description: "Creating impactful visual insights",
       skills: [
         { name: "Power BI", level: 88, isPremium: true },
         { name: "Tableau", level: 85 },
-        { name: "Excel", level: 90 }
+        { name: "Matplotlib", level: 80 },
+        { name: "Seaborn", level: 78 },
+        { name: "Plotly", level: 75 }
       ]
     },
     {
-      title: "Cloud & Database",
+      title: "Database & Cloud Platforms",
       icon: "☁️",
-      description: "Cloud platforms and database management",
+      description: "Cloud and database management",
       skills: [
+        { name: "MySQL/PostgreSQL", level: 85 },
         { name: "Google Cloud Platform", level: 80 },
-        { name: "MySQL Database", level: 85 },
-        { name: "Data Modeling", level: 82 }
+        { name: "BigQuery", level: 75 },
+        { name: "Data Storage", level: 78 }
       ]
     },
     {
-      title: "Analytics & Methodology",
+      title: "Data Analysis & Modeling",
       icon: "📈",
-      description: "Data analysis and project management",
+      description: "Analytics and data methodology",
       skills: [
         { name: "Data Cleaning", level: 88 },
-        { name: "Predictive Analytics", level: 80 },
-        { name: "Dashboard Creation", level: 90 },
-        { name: "Data Storytelling", level: 85 },
-        { name: "Agile Methodology", level: 78 }
+        { name: "Statistical Analysis", level: 82 },
+        { name: "Predictive Modeling", level: 80 },
+        { name: "KPI Monitoring", level: 85 },
+        { name: "Clustering", level: 78 }
+      ]
+    },
+    {
+      title: "Software Development",
+      icon: "🛠️",
+      description: "Full-stack development skills",
+      skills: [
+        { name: "Django", level: 80 },
+        { name: "Flask", level: 78 },
+        { name: "REST API", level: 82 },
+        { name: "HTML/CSS/JS", level: 85 }
+      ]
+    },
+    {
+      title: "Salesforce & CRM",
+      icon: "🌐",
+      description: "Salesforce development expertise",
+      skills: [
+        { name: "Apex", level: 80 },
+        { name: "LWC", level: 78 },
+        { name: "Workflow Automation", level: 85 },
+        { name: "Dashboards", level: 88 }
+      ]
+    },
+    {
+      title: "Professional Skills",
+      icon: "🎯",
+      description: "Methodology and soft skills",
+      skills: [
+        { name: "Agile Methodology", level: 85 },
+        { name: "Problem Solving", level: 90 },
+        { name: "Data Storytelling", level: 88 },
+        { name: "Critical Thinking", level: 85 },
+        { name: "Design Thinking", level: 78 }
       ]
     }
   ];
@@ -53,9 +92,11 @@ const Skills = () => {
     { name: "Power BI", level: "expert", icon: "📊" },
     { name: "Tableau", level: "advanced", icon: "📉" },
     { name: "Excel", level: "expert", icon: "📗" },
+    { name: "Java", level: "advanced", icon: "☕" },
+    { name: "React", level: "advanced", icon: "⚛️" },
     { name: "GCP", level: "advanced", icon: "☁️" },
-    { name: "Data Modeling", level: "advanced", icon: "🏗️" },
-    { name: "MySQL", level: "advanced", icon: "💾" }
+    { name: "MySQL", level: "advanced", icon: "💾" },
+    { name: "Salesforce", level: "advanced", icon: "🌐" }
   ];
 
   return (
@@ -92,7 +133,7 @@ const Skills = () => {
           </div>
           
           {/* Detailed Skills with Progress Bars */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
             {skillCategories.map((category, index) => (
               <div 
                 key={category.title} 
