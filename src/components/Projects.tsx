@@ -8,8 +8,6 @@ interface Project {
   description: string;
   category: string;
   technologies: string[];
-  githubLink: string;
-  liveLink: string;
 }
 
 const Projects = () => {
@@ -22,45 +20,35 @@ const Projects = () => {
       title: "Retail Sales Dashboard",
       description: "Developed an interactive dashboard analyzing sales and inventory trends, uncovering customer buying patterns, and improving reporting efficiency by 25%.",
       category: "Data Analytics",
-      technologies: ["Python", "SQL", "Power BI"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Python", "SQL", "Power BI"]
     },
     {
       id: 2,
       title: "Marketing Campaign Effectiveness Analysis",
       description: "Conducted analysis of marketing campaigns, measuring ROI and conversion rates, optimizing strategies, and improving campaign efficiency by 12%.",
       category: "Data Analytics",
-      technologies: ["Python", "SQL", "Power BI"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Python", "SQL", "Power BI"]
     },
     {
       id: 3,
       title: "Customer Segmentation Analysis",
       description: "Executed customer segmentation using clustering algorithms, enabling targeted marketing campaigns and boosting engagement by 15%.",
       category: "Data Analytics",
-      technologies: ["Python", "Azure"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Python", "Azure"]
     },
     {
       id: 4,
       title: "Investment Risk Simulation",
       description: "Built a Monte Carlo simulation to forecast portfolio risk and optimize investment strategies, increasing forecast accuracy by 20%.",
       category: "Data Analytics",
-      technologies: ["Python", "Monte Carlo Simulation"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Python", "Monte Carlo Simulation"]
     },
     {
       id: 5,
       title: "Data Quality & Compliance Dashboard",
       description: "Created dashboards to monitor data quality and compliance KPIs, reducing reporting errors by 30% and improving regulatory adherence.",
       category: "Data Analytics",
-      technologies: ["Tableau"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Tableau"]
     },
     // Software Development Projects
     {
@@ -68,45 +56,35 @@ const Projects = () => {
       title: "E-commerce Web Application",
       description: "Developed a full-stack e-commerce platform with product management, shopping cart, and order tracking functionality.",
       category: "Software Development",
-      technologies: ["Django", "React", "MySQL"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Django", "React", "MySQL"]
     },
     {
       id: 7,
       title: "Task Management System",
       description: "Built a web application for task creation, assignment, and tracking, improving team productivity and accountability.",
       category: "Software Development",
-      technologies: ["Flask", "Python", "SQLite"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Flask", "Python", "SQLite"]
     },
     {
       id: 8,
       title: "Portfolio Website with Dynamic Content",
       description: "Created a fully responsive, dynamic portfolio website showcasing projects, skills, and contact form integration.",
       category: "Software Development",
-      technologies: ["React", "Tailwind"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["React", "Tailwind"]
     },
     {
       id: 9,
       title: "Blogging Platform",
       description: "Developed a blogging platform with content management, comments, and user authentication for multiple authors.",
       category: "Software Development",
-      technologies: ["Django", "PostgreSQL"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Django", "PostgreSQL"]
     },
     {
       id: 10,
       title: "Real-Time Chat App",
       description: "Built a chat application supporting real-time messaging, online status, and group chat features.",
       category: "Software Development",
-      technologies: ["Node.js", "Socket.io", "MongoDB"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Node.js", "Socket.io", "MongoDB"]
     },
     // Salesforce Projects
     {
@@ -114,45 +92,35 @@ const Projects = () => {
       title: "Salesforce CRM Automation",
       description: "Automated lead assignment, follow-ups, and workflow processes to increase sales team efficiency.",
       category: "Salesforce",
-      technologies: ["Apex", "LWC", "Workflows"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Apex", "LWC", "Workflows"]
     },
     {
       id: 12,
       title: "Employee Performance Tracker",
       description: "Developed dashboards to track employee KPIs, identify skill gaps, and improve workforce planning.",
       category: "Salesforce",
-      technologies: ["Salesforce Reports", "Dashboards"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Salesforce Reports", "Dashboards"]
     },
     {
       id: 13,
       title: "Lead Management System",
       description: "Implemented a lead tracking system to monitor lead stages, conversions, and pipeline metrics.",
       category: "Salesforce",
-      technologies: ["Salesforce Flows", "Apex"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Salesforce Flows", "Apex"]
     },
     {
       id: 14,
       title: "Custom Salesforce Dashboard – KPI Monitoring",
       description: "Created custom dashboards for real-time KPI tracking, enabling data-driven decisions by management.",
       category: "Salesforce",
-      technologies: ["KPI Monitoring"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["KPI Monitoring"]
     },
     {
       id: 15,
       title: "Customer Feedback System",
       description: "Built an automated feedback collection and analysis system to improve customer experience.",
       category: "Salesforce",
-      technologies: ["Salesforce Automation"],
-      githubLink: "Coming Soon",
-      liveLink: "Coming Soon"
+      technologies: ["Salesforce Automation"]
     }
   ];
 
@@ -233,19 +201,19 @@ const Projects = () => {
                   <Button 
                     size="sm" 
                     variant="outline" 
-                    className="flex-1"
-                    disabled={project.githubLink === "Coming Soon"}
+                    className="flex-1 cursor-pointer"
+                    onClick={(e) => e.preventDefault()}
                   >
                     <Github className="mr-2 h-4 w-4" />
-                    {project.githubLink === "Coming Soon" ? "Coming Soon" : "Code"}
+                    GitHub
                   </Button>
                   <Button 
                     size="sm" 
-                    className="flex-1"
-                    disabled={project.liveLink === "Coming Soon"}
+                    className="flex-1 cursor-pointer"
+                    onClick={(e) => e.preventDefault()}
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    {project.liveLink === "Coming Soon" ? "Coming Soon" : "Live Demo"}
+                    Live Preview
                   </Button>
                 </div>
               </div>
