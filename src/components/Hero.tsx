@@ -51,21 +51,21 @@ const Hero = () => {
                     <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-transparent rounded-lg blur-lg opacity-50"></div>
                   </span>
                 </h1>
-                <p className="text-xl md:text-2xl mb-4 text-white/95 leading-relaxed font-medium">
-                  Passionate about building impactful solutions in
+                <p className="text-lg md:text-xl mb-10 text-white/95 leading-relaxed font-medium max-w-3xl">
+                  I build data-driven solutions and interactive dashboards to solve real business problems using Python, SQL, Power BI, Tableau, and cloud platforms.
                 </p>
                 <div className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold mb-12 space-y-3">
                   <div className="text-white/90">
-                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Data Analytics </span>
-                    <span className="text-2xl">📊</span>
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Data Analytics</span>
+                    <span className="text-2xl ml-2">📊</span>
                   </div>
                   <div className="text-white/90">
-                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Salesforce </span>
-                    <span className="text-2xl">☁️</span>
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Salesforce</span>
+                    <span className="text-2xl ml-2">☁️</span>
                   </div>
                   <div className="text-white/90">
-                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Software Development </span>
-                    <span className="text-2xl">💻</span>
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Software Development</span>
+                    <span className="text-2xl ml-2">💻</span>
                   </div>
                 </div>
               </div>
@@ -125,7 +125,7 @@ const Hero = () => {
                 </a>
               ))}
             </div>
-            <p className="text-white/80 text-sm">📞 +91 7989023566</p>
+            <p className="text-white/80 text-sm">+91 7989023566</p>
           </div>
         </div>
       </div>

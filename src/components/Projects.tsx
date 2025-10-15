@@ -8,167 +8,149 @@ interface Project {
   description: string;
   category: string;
   technologies: string[];
-  featured?: boolean;
+  githubLink: string;
+  liveLink: string;
 }
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const projects: Project[] = [
-    // Data Analytics Projects
+    // Project placeholders - titles and descriptions to be updated
     {
       id: 1,
-      title: "Retail Sales Dashboard",
-      description: "Interactive Power BI dashboard analyzing retail sales patterns, customer behavior, and inventory optimization with real-time data visualization.",
+      title: "Project Title 1",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
       category: "Data Analytics",
-      technologies: ["Power BI", "SQL", "Python", "Excel"],
-      featured: true
+      technologies: ["Python", "SQL", "Power BI", "Excel"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
-      id: 2,  
-      title: "Investment Risk Simulation",
-      description: "Monte Carlo simulation model for investment portfolio risk assessment using Python and statistical analysis techniques.",
+      id: 2,
+      title: "Project Title 2",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
       category: "Data Analytics",
-      technologies: ["Python", "NumPy", "Pandas", "Matplotlib"]
+      technologies: ["Tableau", "SQL", "Python"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 3,
-      title: "Customer Segmentation Analysis",
-      description: "Machine learning-based customer segmentation using clustering algorithms to identify target market groups.",
-      category: "Data Analytics", 
-      technologies: ["Python", "Scikit-learn", "Tableau", "SQL"]
+      title: "Project Title 3",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      category: "Data Analytics",
+      technologies: ["Power BI", "MySQL", "Excel"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 4,
-      title: "Data Quality & Compliance Dashboard",
-      description: "Automated data quality monitoring system with compliance reporting and anomaly detection capabilities.",
+      title: "Project Title 4",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
       category: "Data Analytics",
-      technologies: ["Python", "Power BI", "SQL Server", "Azure"]
+      technologies: ["Python", "Pandas", "Tableau"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 5,
-      title: "E-commerce Sales Forecasting",
-      description: "Time series forecasting model for e-commerce sales prediction using machine learning algorithms.",
+      title: "Project Title 5",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
       category: "Data Analytics",
-      technologies: ["Python", "TensorFlow", "Pandas", "Azure ML"]
+      technologies: ["SQL", "Power BI", "GCP"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 6,
-      title: "Healthcare Analytics Dashboard",
-      description: "Comprehensive healthcare analytics platform for patient data analysis and operational insights.",
-      category: "Data Analytics",
-      technologies: ["Tableau", "R", "SQL", "Power BI"]
+      title: "Project Title 6",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      category: "Salesforce",
+      technologies: ["Salesforce", "Apex", "Lightning"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 7,
-      title: "Social Media Sentiment Analysis",
-      description: "Real-time sentiment analysis of social media data using NLP techniques and machine learning models.",
-      category: "Data Analytics",
-      technologies: ["Python", "NLTK", "Twitter API", "MongoDB"]
+      title: "Project Title 7",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      category: "Salesforce",
+      technologies: ["Salesforce", "Process Builder", "Flows"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
-
-    // Salesforce Projects
     {
       id: 8,
-      title: "Lead Management Automation",
-      description: "Automated lead scoring and routing system with custom workflows and real-time notifications.",
+      title: "Project Title 8",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
       category: "Salesforce",
-      technologies: ["Salesforce", "Apex", "Process Builder", "Lightning"],
-      featured: true
+      technologies: ["Salesforce", "Service Cloud", "Lightning"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 9,
-      title: "Case Escalation & Service Console",  
-      description: "Advanced case management system with automated escalation rules and custom service console configuration.",
+      title: "Project Title 9",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
       category: "Salesforce",
-      technologies: ["Salesforce", "Service Cloud", "Lightning", "Flows"]
+      technologies: ["Salesforce", "API Integration", "Apex"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 10,
-      title: "Custom Salesforce App for Workshop Registrations",
-      description: "End-to-end workshop registration system with payment integration and automated email confirmations.",
+      title: "Project Title 10",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
       category: "Salesforce",
-      technologies: ["Salesforce", "Lightning", "Apex", "Payment Gateway"]
+      technologies: ["Salesforce", "Reports", "Dashboards"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 11,
-      title: "Salesforce Reports & Dashboards",
-      description: "Comprehensive reporting suite with interactive dashboards for sales performance and customer analytics.",
-      category: "Salesforce",
-      technologies: ["Salesforce", "Reports", "Dashboards", "Einstein Analytics"]
+      title: "Project Title 11",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      category: "Software Development",
+      technologies: ["Python", "Django", "PostgreSQL"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 12,
-      title: "Role-Based Access & Security Model",
-      description: "Enterprise-level security implementation with role hierarchies, permission sets, and data access controls.",
-      category: "Salesforce",
-      technologies: ["Salesforce", "Security", "Profiles", "Permission Sets"]
+      title: "Project Title 12",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      category: "Software Development",
+      technologies: ["React", "Node.js", "MongoDB"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 13,
-      title: "Workflow & Approval Automation",
-      description: "Complex approval processes with multi-level workflows and automated business rule enforcement.",
-      category: "Salesforce", 
-      technologies: ["Salesforce", "Workflows", "Approval Process", "Process Builder"]
+      title: "Project Title 13",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      category: "Software Development",
+      technologies: ["Python", "Flask", "MySQL"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
     {
       id: 14,
-      title: "Salesforce + External API Integration",
-      description: "Seamless integration between Salesforce and external systems using REST APIs and custom connectors.",
-      category: "Salesforce",
-      technologies: ["Salesforce", "REST API", "Integration", "Middleware"]
+      title: "Project Title 14",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
+      category: "Software Development",
+      technologies: ["Java", "Spring Boot", "PostgreSQL"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     },
-
-    // Software Development Projects
     {
       id: 15,
-      title: "Smart Expense Tracker",
-      description: "Full-stack expense management application with AI-powered receipt scanning and budget analytics.",
+      title: "Project Title 15",
+      description: "Brief description of the project highlighting the problem solved, technologies used, and business impact. Quantifiable results placeholder.",
       category: "Software Development",
-      technologies: ["Django", "React", "PostgreSQL", "Machine Learning"],
-      featured: true
-    },
-    {
-      id: 16,
-      title: "Online Learning Platform",
-      description: "Comprehensive e-learning platform with video streaming, progress tracking, and interactive assessments.",
-      category: "Software Development",
-      technologies: ["Django", "React", "Redis", "AWS S3"]
-    },
-    {
-      id: 17,
-      title: "Cloud-Based File Storage",
-      description: "Secure cloud storage solution with file sharing, version control, and collaborative editing features.",
-      category: "Software Development",
-      technologies: ["Node.js", "MongoDB", "AWS", "WebSocket"]
-    },
-    {
-      id: 18,
-      title: "IoT Smart Home Dashboard",
-      description: "Real-time IoT device monitoring and control system with mobile app integration.",
-      category: "Software Development",
-      technologies: ["Python", "IoT", "MQTT", "React Native"]
-    },
-    {
-      id: 19,
-      title: "AI-Powered Resume Screener",
-      description: "Automated resume screening system using NLP and machine learning for candidate evaluation.",
-      category: "Software Development", 
-      technologies: ["Python", "NLP", "Machine Learning", "Flask"]
-    },
-    {
-      id: 20,
-      title: "Cybersecurity Log Analyzer",
-      description: "Advanced security log analysis tool with threat detection and automated incident response.",
-      category: "Software Development",
-      technologies: ["Python", "Elasticsearch", "Kibana", "Security"]
-    },
-    {
-      id: 21,
-      title: "Job Portal Web Application",
-      description: "Complete job portal with applicant tracking, resume parsing, and interview scheduling features.",
-      category: "Software Development",
-      technologies: ["Django", "PostgreSQL", "Celery", "Bootstrap"]
+      technologies: ["Python", "REST API", "Docker"],
+      githubLink: "Coming Soon",
+      liveLink: "Coming Soon"
     }
   ];
 
@@ -194,7 +176,7 @@ const Projects = () => {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A showcase of 21 diverse projects spanning data analytics, Salesforce development, and software engineering
+              A showcase of 15 diverse projects spanning data analytics, Salesforce development, and software engineering
             </p>
           </div>
 
@@ -217,17 +199,9 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <div
                 key={project.id}
-                className={`project-card rounded-2xl p-6 ${
-                  project.featured ? 'ring-2 ring-primary/20' : ''
-                }`}
+                className="project-card rounded-2xl p-6"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {project.featured && (
-                  <div className="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
-                    Featured
-                  </div>
-                )}
-                
                 <div className="mb-4">
                   <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
                     {project.category}
@@ -254,13 +228,22 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <Button size="sm" variant="outline" className="flex-1">
+                  <Button 
+                    size="sm" 
+                    variant="outline" 
+                    className="flex-1"
+                    disabled={project.githubLink === "Coming Soon"}
+                  >
                     <Github className="mr-2 h-4 w-4" />
-                    Code
+                    {project.githubLink === "Coming Soon" ? "Coming Soon" : "Code"}
                   </Button>
-                  <Button size="sm" className="flex-1">
+                  <Button 
+                    size="sm" 
+                    className="flex-1"
+                    disabled={project.liveLink === "Coming Soon"}
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
+                    {project.liveLink === "Coming Soon" ? "Coming Soon" : "Live Demo"}
                   </Button>
                 </div>
               </div>
